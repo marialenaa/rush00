@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush02.c                                           :+:      :+:    :+:   */
+/*   rush00.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ldes-cou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/17 15:52:11 by ldes-cou          #+#    #+#             */
-/*   Updated: 2020/10/17 18:12:32 by jahuang          ###   ########.fr       */
+/*   Created: 2020/10/17 19:23:40 by ldes-cou          #+#    #+#             */
+/*   Updated: 2020/10/17 19:29:17 by ldes-cou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,15 @@ void	ft_firstline(int sizecol)
 	int	col;
 
 	col = 0;
-	ft_putchar('A');
+	ft_putchar('o');
 	while (col < sizecol - 2)
 	{
-		ft_putchar('B');
+		ft_putchar('-');
 		col++;
 	}
 	if (sizecol > 1)
 	{
-		ft_putchar('A');
+		ft_putchar('o');
 	}
 	ft_putchar('\n');
 }
@@ -35,15 +35,15 @@ void	ft_lastline(int sizecol)
 	int	col;
 
 	col = 0;
-	ft_putchar('C');
+	ft_putchar('o');
 	while (col < sizecol - 2)
 	{
-		ft_putchar('B');
+		ft_putchar('-');
 		col++;
 	}
 	if (sizecol > 1)
 	{
-		ft_putchar('C');
+		ft_putchar('o');
 	}
 	ft_putchar('\n');
 }
@@ -53,7 +53,7 @@ void	ft_middle(int sizecol)
 	int	col;
 
 	col = 0;
-	ft_putchar('B');
+	ft_putchar('|');
 	while (col < sizecol - 2)
 	{
 		ft_putchar(' ');
@@ -61,7 +61,7 @@ void	ft_middle(int sizecol)
 	}
 	if (sizecol > 1)
 	{
-		ft_putchar('B');
+		ft_putchar('|');
 	}
 	ft_putchar('\n');
 }
@@ -77,7 +77,7 @@ void	rush(int sizecol, int sizeline)
 		return ;
 	if (sizecol == 1 && sizeline == 1)
 	{
-		ft_putchar('A');
+		ft_putchar('o');
 		ft_putchar('\n');
 		return ;
 	}
