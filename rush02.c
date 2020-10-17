@@ -6,89 +6,88 @@
 /*   By: ldes-cou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/17 15:52:11 by ldes-cou          #+#    #+#             */
-/*   Updated: 2020/10/17 16:29:30 by ldes-cou         ###   ########.fr       */
+/*   Updated: 2020/10/17 18:12:32 by jahuang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putchar(char c);
+void	ft_putchar(char c);
 
-void ft_lastline(int sizec)
+void	ft_firstline(int sizecol)
 {
-	int c;
+	int	col;
 
-	c = 0;
-	ft_putchar('C');
-	while(c < sizec -2)
+	col = 0;
+	ft_putchar('A');
+	while (col < sizecol - 2)
 	{
 		ft_putchar('B');
-		c++;
+		col++;
 	}
-	if(sizec > 1)
+	if (sizecol > 1)
+	{
+		ft_putchar('A');
+	}
+	ft_putchar('\n');
+}
+
+void	ft_lastline(int sizecol)
+{
+	int	col;
+
+	col = 0;
+	ft_putchar('C');
+	while (col < sizecol - 2)
+	{
+		ft_putchar('B');
+		col++;
+	}
+	if (sizecol > 1)
 	{
 		ft_putchar('C');
 	}
 	ft_putchar('\n');
 }
 
-void ft_middle(int sizec)
-{	
-	int c;
+void	ft_middle(int sizecol)
+{
+	int	col;
 
-	c = 0;
+	col = 0;
 	ft_putchar('B');
-	while(c < sizec -2)
+	while (col < sizecol - 2)
 	{
 		ft_putchar(' ');
-		c++;
+		col++;
 	}
-	if(sizec > 1)
+	if (sizecol > 1)
 	{
 		ft_putchar('B');
 	}
 	ft_putchar('\n');
-
 }
-void ft_firstline(int sizec)
-{
-	int c;
 
-	c = 0;
-	ft_putchar('A');
-	while(c < sizec - 2)
-	{
-		c++;
-		ft_putchar('B');
-	}
-	if (sizec > 1)
+void	rush(int sizecol, int sizeline)
+{
+	int	col;
+	int	line;
+
+	col = 0;
+	line = 0;
+	if (sizecol <= 0 || sizeline <= 0)
+		return ;
+	if (sizecol == 1 && sizeline == 1)
 	{
 		ft_putchar('A');
-	}
-	ft_putchar('\n');
-}
-void ft_rush02(int sizec, int sizel)
-{
-	int c;
-	int l;
-
-	c = 0;
-	l = 0;
-	if (sizec <= 0 || sizel <= 0)
-		return ;
-	if (sizec == 1 && sizel == 1)
-	{
-		ft_putchar('A');
+		ft_putchar('\n');
 		return ;
 	}
-
-	ft_firstline(sizec);
-
-	while(l < sizel -2)
+	ft_firstline(sizecol);
+	while (line < sizeline - 2)
 	{
-		ft_middle(sizec);
-		l++;
+		ft_middle(sizecol);
+		line++;
 	}
-	if (sizel > 1)
-		ft_lastline(sizec);
-
+	if (sizeline > 1)
+		ft_lastline(sizecol);
 	return ;
 }
