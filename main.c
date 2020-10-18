@@ -6,7 +6,7 @@
 /*   By: ldes-cou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/17 11:52:56 by ldes-cou          #+#    #+#             */
-/*   Updated: 2020/10/17 18:12:41 by jahuang          ###   ########.fr       */
+/*   Updated: 2020/10/18 11:26:07 by mgallizz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,6 @@ void	rush(int sizecol, int sizeline);
 
 int		main(void)
 {
-	rush(4, 47);
-	rush(2, 4);
-	rush(0, 0);
-	rush(1, 1);
-	rush(0, 'a');
+	rush(5, 5);
 	return (0);
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush02.c                                           :+:      :+:    :+:   */
+/*   rush04.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldes-cou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mgallizz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/17 15:52:11 by ldes-cou          #+#    #+#             */
-/*   Updated: 2020/10/18 11:26:26 by mgallizz         ###   ########.fr       */
+/*   Created: 2020/10/18 11:08:17 by mgallizz          #+#    #+#             */
+/*   Updated: 2020/10/18 11:22:29 by mgallizz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_firstline(int sizecol)
 	}
 	if (sizecol > 1)
 	{
-		ft_putchar('A');
+		ft_putchar('C');
 	}
 	ft_putchar('\n');
 }
@@ -43,7 +43,7 @@ void	ft_lastline(int sizecol)
 	}
 	if (sizecol > 1)
 	{
-		ft_putchar('C');
+		ft_putchar('A');
 	}
 	ft_putchar('\n');
 }
